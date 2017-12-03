@@ -45,7 +45,7 @@
     "filesystem"
   ],
   "dependencies": {
-    "globby": "^6.1.0",
+    "globby": "^7.1.1",
     "is-path-cwd": "^1.0.0",
     "is-path-in-cwd": "^1.0.0",
     "p-map": "^1.1.1",

@@ -20,7 +20,7 @@ function safeCheck(file) {
 }
 
 module.exports = (patterns, opts) => {
-	opts = Object.assign({}, opts);
+	opts = Object.assign({expandDirectories: false, nodir: false}, opts);
 
 	const force = opts.force;
 	delete opts.force;
@@ -46,7 +46,7 @@ module.exports = (patterns, opts) => {
 };
 
 module.exports.sync = (patterns, opts) => {
-	opts = Object.assign({}, opts);
+	opts = Object.assign({expandDirectories: false, nodir: false}, opts);
 
 	const force = opts.force;
 	delete opts.force;
